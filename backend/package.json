@@ -1,0 +1,34 @@
+{
+  "name": "mean-stack-newswebsite",
+  "version": "1.0.0",
+  "description": "Mean stack projec: News",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raza-ILV/MEAN-Stack-newsWebsite.git"
+  },
+  "keywords": [
+    "MEAN",
+    "MongoDB",
+    "Express",
+    "Angular",
+    "NodeJS"
+  ],
+  "author": "Raza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raza-ILV/MEAN-Stack-newsWebsite/issues"
+  },
+  "homepage": "https://github.com/Raza-ILV/MEAN-Stack-newsWebsite#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

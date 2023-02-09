@@ -1,0 +1,51 @@
+const express = require("express")
+const postScema = require("../models/post-scema")
+const router = express.Router()
+const Post = require("../models/post-scema")
+
+
+//==================[Add post page]========================
+router.post("/add-post", (req, res, next) => {
+    const newPost = new Post({
+        title:req.body.title,
+        description:req.body.description,
+        article:req.body.article,
+        image:req.body.image
+    })
+    newPost.save((err, post) => {
+        if(err){res.status(500).json({data: err})} 
+        else {res.status(200).json({data: post})}
+    })
+})
+//==================[News page]============================
+router.get("/news", (req, res, next) => {
+    Post.find({}, (err, news) => {
+        if(err){res.status(500).json({data: err})} 
+        else {res.status(200).json({data: news})}
+    })
+})
+//==================[Post page]============================
+router.get("/news/:id", (req, res, next) => {
+    Post.find({_id: req.params.id}, (err, news) => {
+        if(err){res.status(500).json({data: err})} 
+        else {res.status(200).json({data: news})}
+    })
+})
+//==================[Addition functional]==================
+// router.put("/edit", (req, res, next) => {
+//     res
+//         .status(200)
+//         .json({msg: "Edit is working"})
+// })
+// router.delete("/news", (req, res, next) => {
+//     res
+//         .status(200)
+//         .json({msg: "Nwes are working"})
+// })
+//=========================================================
+module.exports = router
+
+
+
+
+
