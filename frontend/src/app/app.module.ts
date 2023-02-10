@@ -12,6 +12,8 @@ import { ErrorComponent } from './components/pages/error/error.component';
 import { ThemeService } from './services/theme.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import { HttpClientModule } from '@angular/common/http';
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,9 @@ import {MatIconModule} from '@angular/material/icon';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent]

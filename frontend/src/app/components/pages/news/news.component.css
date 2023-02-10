@@ -2,4 +2,46 @@
     width: 100%;
     min-height: 75vh;
     background-color: rgb(190, 190, 190);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+a{
+    color: black;
+    width: 40vh;
+    height: 25vh;
+    margin: 5px;
+}
+.image{
+    height: 25vh;
+    width: 40%;
+    background-size:cover;
+    object-fit:cover;   
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.text{
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.title{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 5px 0px 0px 0px;
+}
+.descr{
+    font-size: 12px;
+    margin: 0px;
+    margin: 10px 0px 0px 0px;
+}
+mat-card{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
 }

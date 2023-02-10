@@ -1,1 +1,12 @@
-<div class="main"></div>
+<div class="main">
+    <a href="/news/{{post._id}}" *ngFor="let post of news">
+        <mat-card>
+                <div class="image" style="background-image: url({{post.image}});"></div>
+                <div class="text">
+                    <p class="title">{{post.title}}</p>
+                    <p class="descr">{{post.description}}</p>
+                </div>
+        </mat-card>
+    </a>
+
+</div>
