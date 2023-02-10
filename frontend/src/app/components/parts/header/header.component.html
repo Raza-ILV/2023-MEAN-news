@@ -1,0 +1,12 @@
+<header>
+    <a class="logo" routerLink="/home">
+        <p class="label-en">MEAN-Games</p>
+        <p class="label-jpn">ゲーム</p>
+    </a>
+    <div class="spacer"></div>
+    <a class="news"  routerLink="/news"><p>NEWS</p></a>
+    <a class="add-post"  routerLink="/add-post"><p>ADD POST</p></a>
+    <div class="spacer"></div>
+    <a class="theme" (click)="switchTheme()" *ngIf="!darkTheme"><p><mat-icon>dark_mode</mat-icon></p></a>
+    <a class="theme" (click)="switchTheme()" *ngIf="darkTheme"><p><mat-icon>light_mode</mat-icon></p></a>
+</header>

@@ -1,0 +1,12 @@
+/* [GLOBAL] */
+
+/* [DARK MODE] */
+.dark-mode{
+    --background: black;
+    --text-color: whitesmoke
+}
+/* [LIGHT MODE] */
+.light-mode{
+    --background: rgb(235, 235, 235);
+    --text-color: black
+}

@@ -1,0 +1,43 @@
+header{
+    background-color: var(--background);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.label-jpn, .label-en{
+    font-weight: 500;
+    margin: 6px 0px 6px 0px;
+}
+a{
+    cursor: pointer;
+    color: (var(--text-color));
+}
+.spacer{
+    flex-grow: 1;
+}
+.theme{
+    margin-inline: 30px;
+}
+.news{
+    background-color: var(--text-color);
+}
+.news p{
+    color: var(--background);
+    margin: 10px;
+}
+.news, .add-post{
+    margin-inline: 20px;
+}
+.logo{
+    height: 100%;
+    margin-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: var(--text-color);
+    font-size: 20px;
+    margin: 0px;
+}
