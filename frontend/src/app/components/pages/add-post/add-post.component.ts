@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-add-post',
   templateUrl: './add-post.component.html',
   styleUrls: ['./add-post.component.css']
 })
-export class AddPostComponent {
-
+export class AddPostComponent implements OnInit {
+  title:string
+  image:string
+  article:string
+  description:string
+  ngOnInit(): void {}
+  
 }

@@ -1,10 +1,19 @@
 <div class="main">
-    <footer class="container">
+    <form class="container">
+        <p class="preview">POST PREVIEW:</p>
+        <mat-card>
+            <div class="image" style="background-image: url({{image}});"></div>
+            <div class="text">
+                <p class="title">{{title}}</p>
+                <p class="descr">{{article}}</p>
+            </div>
+        </mat-card>
         <div class="main-inputs">
-            <input type="text" class="input-title" placeholder="Title...">
-            <input type="text" class="input-image" placeholder="Image URL...">
+            <input type="text" class="input-title" placeholder="Title..." name="title" [(ngModel)]="title">
+            <input type="text" class="input-image" placeholder="Image URL..." name="url" [(ngModel)]="image">
+            <button>D</button>
         </div>
-        <textarea rows="10" placeholder="Post..."></textarea>
+        <textarea rows="10" placeholder="Post..." name="article" [(ngModel)]="article"></textarea>
         <button type="submit">POST</button>
-    </footer>
+    </form>
 </div>
