@@ -5,9 +5,9 @@
       cd backend
       ```
   - Install all of the packages by:
-  -```console
-  -npm i
-  -```
+      ```console
+      npm i
+      ```
   - Strt server by: `npm start`
   
 * Frontend 
