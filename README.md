@@ -22,7 +22,4 @@
     ng serve
     ```
 * Open in browser
-  - Go to localhost adress:
-    ```link
-    localhost:4200
-    ```
+    `http://localhost:4200`
