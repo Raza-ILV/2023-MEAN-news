@@ -8,10 +8,15 @@
       ```console
       npm i
       ```
-  - Strt server by: `npm start`
-  
+  - Strt server by:
+    ```console
+    npm start`
+    ```
 * Frontend 
-  - Open backend folder by: `cd frontend`
+  - Open backend folder by:
+     ```cmd
+     cd frontend
+     ```
   - Start fontend by: `ng serve`
   
 *
