@@ -15,7 +15,7 @@ router.post("/add-post", (req, res, next) => {
     newPost.save((err, post) => {
         if(err){res.status(500).json({data: err})} 
         else {res.status(200).json({data: post})}
-        console.log("---> User was added")
+        console.log("---> Post was added")
     })
 })
 //==================[News page]============================
