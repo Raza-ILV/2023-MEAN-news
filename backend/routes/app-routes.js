@@ -33,15 +33,20 @@ router.get("/news/:id", (req, res, next) => {
     })
 })
 //==================[Addition functional]==================
+// router.delete("/delete/:id", (req, res, next) => {
+//     Post.findByIdAndRemove({_id: req.params.id}, (err, post) =>{
+//         if(err) {
+//             res.status(200).json({data: err})
+//         } else {
+//             res.status(200).json({data: post})
+//             console.log("---> Post deleted")
+//         }
+//     })
+// })
 // router.put("/edit", (req, res, next) => {
 //     res
 //         .status(200)
 //         .json({msg: "Edit is working"})
-// })
-// router.delete("/news", (req, res, next) => {
-//     res
-//         .status(200)
-//         .json({msg: "Nwes are working"})
 // })
 //=========================================================
 module.exports = router

@@ -41,3 +41,21 @@ p{
     font-size: 20px;
     margin: 0px;
 }
+
+
+@media screen and (max-width: 550px){
+    .logo{
+        display: none;
+    }
+}
+@media screen and (max-width: 360px){
+    p{
+        font-size: 16px;
+    }
+    .news, .add-post{
+        margin: 0px 5px 0px 5px;
+    }
+    .theme {
+        margin: 0px 20px 0px 10px;
+    }
+}

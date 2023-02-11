@@ -31,7 +31,7 @@ export class AddPostComponent implements OnInit {
     this.postService.createPost(this.post).subscribe({
       next: (data:any) => {
         console.log(data)
-        this.router.navigate(["/"])
+        this.router.navigate(["/news"])
       },
       error: (err) => {console.log(err)}
     })

@@ -1,17 +1,18 @@
 .main{
     width: 100%;
     min-height: 75vh;
-    background-color: rgb(190, 190, 190);
+    background-color: var(--main-bacground);
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
 }
 a{
     color: black;
     width: 40vh;
     height: 25vh;
-    margin: 5px;
+    margin: 10px;
 }
 .image{
     height: 25vh;

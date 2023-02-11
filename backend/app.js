@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 const bodyParser = require("body-parser")
 const cors = require("cors")
 
-mongoose.connect("mongodb://127.0.0.1/meannews", (err) => {
+mongoose.connect("mongodb+srv://username:lDgtjVeZMibr0nfG@meannwes.klg0p29.mongodb.net/?retryWrites=true&w=majority", (err) => {
     if(err){console.error("---> DB connection error: " + err)} 
     else {console.error("---> DB connected")}
 })
