@@ -23,6 +23,6 @@
     ```
 * Open in browser
   - Go to localhost adress:
-```html
-localhost:4200
-```
+    ```lonk
+    localhost:4200
+    ```
