@@ -15,6 +15,9 @@ import {MatIconModule} from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     HttpClientModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    MatButtonModule,
+    MatTooltipModule
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent]

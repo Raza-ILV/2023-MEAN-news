@@ -1,19 +1,36 @@
 <div class="main">
-    <form class="container">
-        <p class="preview">POST PREVIEW:</p>
-        <mat-card>
-            <div class="image" style="background-image: url({{image}});"></div>
-            <div class="text">
-                <p class="title">{{title}}</p>
-                <p class="descr">{{article}}</p>
-            </div>
-        </mat-card>
+    <form (ngSubmit)="addPost()" class="container">
+        <div class="preview-card">
+            <p class="preview">POST PREVIEW</p>
+            <mat-card>
+                <div class="image" style="background-image: url({{image}});"></div>
+                <div class="text">
+                    <p class="title">{{title}}</p>
+                    <p class="descr">{{article}}</p>
+                </div>
+            </mat-card>
+        </div>
+
         <div class="main-inputs">
             <input type="text" class="input-title" placeholder="Title..." name="title" [(ngModel)]="title">
             <input type="text" class="input-image" placeholder="Image URL..." name="url" [(ngModel)]="image">
-            <button>D</button>
+            <button 
+                class="clear" 
+                mat-icon-button 
+                (click)="clearImage()" 
+                matTooltip="Clear image"
+                matTooltipPosition="above"
+                type="button"
+            >
+                <mat-icon>backspace</mat-icon>
+            </button>
         </div>
-        <textarea rows="10" placeholder="Post..." name="article" [(ngModel)]="article"></textarea>
-        <button type="submit">POST</button>
+        <textarea 
+            rows="10" 
+            placeholder="Post..." 
+            name="article" 
+            [(ngModel)]="article"
+        ></textarea>
+        <button type="submit" mat-raised-button class="submit">POST</button>
     </form>
 </div>

@@ -5,6 +5,7 @@ import { Post } from "../post"
   providedIn: 'root'
 })
 export class PostService {
+  private post: Post
   private baseUri: string = "http://localhost:8080"
   private headers = new HttpHeaders().set("Content-Type", "application/json")
   constructor(private http: HttpClient) { }
@@ -17,5 +18,13 @@ export class PostService {
   }
   readPost(id:string){
     return this.http.get(this.baseUri + "/news/" + id, {headers: this.headers})
+  }
+
+  
+  setter(post:Post){
+    this.post = post
+  }
+  getter(){
+    return this.post
   }
 }
