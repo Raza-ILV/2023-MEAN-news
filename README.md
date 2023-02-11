@@ -21,4 +21,8 @@
     ```cmd
     ng serve
     ```
-*
+* Open in browser
+  - Go to localhost adress:
+```html
+localhost:4200
+```
