@@ -1,15 +1,15 @@
 # How to start project?
 * Backend & database connection
   - Open backend folder by: 
-      ```console
+      ```cmd
       cd backend
       ```
   - Install all of the packages by:
-      ```console
+      ```cmd
       npm i
       ```
   - Strt server by:
-    ```console
+    ```cmd
     npm start`
     ```
 * Frontend 
@@ -17,6 +17,8 @@
      ```cmd
      cd frontend
      ```
-  - Start fontend by: `ng serve`
-  
+  - Start fontend by:
+    ```cmd
+    ng serve
+    ```
 *
