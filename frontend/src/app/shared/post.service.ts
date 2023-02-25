@@ -19,9 +19,9 @@ export class PostService {
   readPost(id:string){
     return this.http.get(this.baseUri + "/news/" + id, {headers: this.headers})
   }
-  deletePost(id:string){
-    return this.http.get(this.baseUri + "/delete/" + id, {headers: this.headers})
-  }
+  // deletePost(id:string){
+  //   return this.http.get(this.baseUri + "/delete/" + id, {headers: this.headers})
+  // }
 
   
   setter(post:Post){

@@ -5,6 +5,6 @@ const postSchema = mongoose.Schema({
     description:{type:String},
     article:{type:String},
     image:{type:String},
-})
+}, {collection: "PR1Posts"})
 
 module.exports = mongoose.model("Post", postSchema)

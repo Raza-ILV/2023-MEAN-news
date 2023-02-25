@@ -17,6 +17,7 @@ import {MatCardModule} from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { PostComponent } from './components/pages/post/post.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     HomeComponent,
     NewsComponent,
     AddPostComponent,
-    ErrorComponent
+    ErrorComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

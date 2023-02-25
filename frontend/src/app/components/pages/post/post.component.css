@@ -1,0 +1,46 @@
+.main{
+    width: 100%;
+    min-height: 75vh;
+    background-color: var(--main-bacground);
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.main-card{
+    width: 150vh;
+    height: 60vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.content{
+    width: 100vh;
+    height: 100%;
+}
+.image{
+    height: 100%;
+    width: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 0px;
+}
+h1{
+    height: 8vh;
+    width: 100vh;
+    margin: 0px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    font-size: 1.2em;
+    line-height: 1.6em;
+    margin: 20px;
+}
