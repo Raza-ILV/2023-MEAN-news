@@ -10,13 +10,17 @@
       ```
   - Start server by:
     ```cmd
-    npm run start
+    npm start
     ```
 * Frontend 
   - Open backend folder by:
      ```cmd
      cd frontend
      ```
+  - Install all of the packages by:
+    ```cmd
+    npm i
+    ```
   - Start fontend by:
     ```cmd
     ng serve
