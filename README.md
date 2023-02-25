@@ -8,9 +8,9 @@
       ```cmd
       npm i
       ```
-  - Strt server by:
+  - Start server by:
     ```cmd
-    npm start`
+    npm run start
     ```
 * Frontend 
   - Open backend folder by:
